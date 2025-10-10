@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Sum - Strike IDE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Solve Two Sum problem on Strike IDE. Practice coding with our advanced online code editor.">
+</head>
+<body class="ide-body">
+
+    <!-- Navigation Bar -->
+    <header class="navbar ide-navbar" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
+            <div class="nav-logo">
+                
+
+                     <img class="codearmylogo" src="LOGO.png" alt="">
+              
+                <span class="logo-text">STRIKE</span>
+            </div>
+            <div class="ide-nav-center">
+                <a href="problems.html" class="ide-nav-link">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Problems
+                </a>
+                <span class="problem-title-nav">Two Sum</span>
+            </div>
+            <div class="nav-auth">
+                <button class="btn-timer">
+                    <i class="fas fa-clock"></i>
+                    <span id="timer">00:00:00</span>
+                </button>
+             
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main IDE Container -->
+    <div class="ide-container">
+        
+        <!-- Left Panel - Problem Description -->
+        <div class="ide-left-panel">
+            
+            <!-- Problem Header -->
+            <div class="problem-header-section">
+                <div class="problem-header-top">
+                    <h1 class="problem-main-title">
+                        1. Two Sum
+                        <span class="difficulty-badge easy">Easy</span>
+                    </h1>
+                    <div class="problem-actions">
+                        <button class="action-btn" title="Like">
+                            <i class="far fa-thumbs-up"></i>
+                            <span>1.2K</span>
+                        </button>
+                        <button class="action-btn" title="Dislike">
+                            <i class="far fa-thumbs-down"></i>
+                            <span>45</span>
+                        </button>
+                        <button class="action-btn" title="Bookmark">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                        <button class="action-btn" title="Share">
+                            <i class="fas fa-share-alt"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="problem-stats-bar">
+                    <div class="stat-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Acceptance: <strong>48.2%</strong></span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span>Solved by: <strong>2.4M</strong></span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-fire"></i>
+                        <span>Frequency: <strong>Very High</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="problem-tabs">
+                <button class="problem-tab active" data-tab="description">
+                    <i class="fas fa-file-alt"></i>
+                    Description
+                </button>
+                <button class="problem-tab" data-tab="editorial">
+                    <i class="fas fa-lightbulb"></i>
+                    Editorial
+                </button>
+                <button class="problem-tab" data-tab="solutions">
+                    <i class="fas fa-code"></i>
+                    Solutions
+                    <span class="tab-badge">247</span>
+                </button>
+                <button class="problem-tab" data-tab="submissions">
+                    <i class="fas fa-history"></i>
+                    Submissions
+                </button>
+                <button class="problem-tab" data-tab="discuss">
+                    <i class="fas fa-comments"></i>
+                    Discuss
+                    <span class="tab-badge">89</span>
+                </button>
+            </div>
+
+            <!-- Tab Content Container -->
+            <div class="problem-content-container">
+                
+                <!-- Description Tab -->
+                <div class="tab-content active" id="description-tab">
+                    
+                    <!-- Problem Description -->
+                    <div class="problem-section">
+                        <p class="problem-description">
+                            Given an array of integers <code>nums</code> and an integer <code>target</code>, 
+                            return <em>indices of the two numbers such that they add up to <code>target</code></em>.
+                        </p>
+                        <p class="problem-description">
+                            You may assume that each input would have <strong>exactly one solution</strong>, 
+                            and you may not use the <em>same</em> element twice.
+                        </p>
+                        <p class="problem-description">
+                            You can return the answer in any order.
+                        </p>
+                    </div>
+
+                    <!-- Examples -->
+                    <div class="problem-section">
+                        <h3 class="section-title">Examples</h3>
+                        
+                        <div class="example-block">
+                            <div class="example-header">
+                                <strong>Example 1:</strong>
+                            </div>
+                            <div class="example-content">
+                                <div class="example-io">
+                                    <div class="io-line">
+                                        <span class="io-label">Input:</span>
+                                        <code>nums = [2,7,11,15], target = 9</code>
+                                    </div>
+                                    <div class="io-line">
+                                        <span class="io-label">Output:</span>
+                                        <code>[0,1]</code>
+                                    </div>
+                                    <div class="io-line">
+                                        <span class="io-label">Explanation:</span>
+                                        <span>Because nums[0] + nums[1] == 9, we return [0, 1].</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="example-block">
+                            <div class="example-header">
+                                <strong>Example 2:</strong>
+                            </div>
+                            <div class="example-content">
+                                <div class="example-io">
+                                    <div class="io-line">
+                                        <span class="io-label">Input:</span>
+                                        <code>nums = [3,2,4], target = 6</code>
+                                    </div>
+                                    <div class="io-line">
+                                        <span class="io-label">Output:</span>
+                                        <code>[1,2]</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="example-block">
+                            <div class="example-header">
+                                <strong>Example 3:</strong>
+                            </div>
+                            <div class="example-content">
+                                <div class="example-io">
+                                    <div class="io-line">
+                                        <span class="io-label">Input:</span>
+                                        <code>nums = [3,3], target = 6</code>
+                                    </div>
+                                    <div class="io-line">
+                                        <span class="io-label">Output:</span>
+                                        <code>[0,1]</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Constraints -->
+                    <div class="problem-section">
+                        <h3 class="section-title">Constraints</h3>
+                        <ul class="constraints-list">
+                            <li><code>2 <= nums.length <= 10<sup>4</sup></code></li>
+                            <li><code>-10<sup>9</sup> <= nums[i] <= 10<sup>9</sup></code></li>
+                            <li><code>-10<sup>9</sup> <= target <= 10<sup>9</sup></code></li>
+                            <li><strong>Only one valid answer exists.</strong></li>
+                        </ul>
+                    </div>
+
+                    <!-- Follow-up -->
+                    <div class="problem-section follow-up">
+                        <h3 class="section-title">
+                            <i class="fas fa-brain"></i>
+                            Follow-up
+                        </h3>
+                        <p class="follow-up-text">
+                            Can you come up with an algorithm that is less than <code>O(n<sup>2</sup>)</code> time complexity?
+                        </p>
+                    </div>
+
+                    <!-- Hints -->
+                    <div class="problem-section">
+                        <h3 class="section-title">
+                            <i class="fas fa-lightbulb"></i>
+                            Hints
+                        </h3>
+                        <div class="hints-container">
+                            <div class="hint-item collapsed">
+                                <div class="hint-header">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Hint 1</span>
+                                </div>
+                                <div class="hint-content">
+                                    A really brute force way would be to search for all possible pairs of numbers 
+                                    but that would be too slow. Again, it's best to try out brute force solutions 
+                                    for just for completeness. It is from these brute force solutions that you can 
+                                    come up with optimizations.
+                                </div>
+                            </div>
+                            <div class="hint-item collapsed">
+                                <div class="hint-header">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Hint 2</span>
+                                </div>
+                                <div class="hint-content">
+                                    So, if we fix one of the numbers, say <code>x</code>, we have to scan the 
+                                    entire array to find the next number <code>y</code> which is <code>target - x</code> 
+                                    where <code>x + y = target</code>. Can we change our array somehow so that 
+                                    this search becomes faster?
+                                </div>
+                            </div>
+                            <div class="hint-item collapsed">
+                                <div class="hint-header">
+                                    <i class="fas fa-chevron-right"></i>
+                                    <span>Hint 3</span>
+                                </div>
+                                <div class="hint-content">
+                                    The second train of thought is, without changing the array, can we use 
+                                    additional space somehow? Like maybe a hash map to speed up the search?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="problem-section">
+                        <h3 class="section-title">Related Topics</h3>
+                        <div class="problem-tags-list">
+                            <a href="#" class="problem-tag">Array</a>
+                            <a href="#" class="problem-tag">Hash Table</a>
+                        </div>
+                    </div>
+
+                    <!-- Company Tags -->
+                    <div class="problem-section">
+                        <h3 class="section-title">Companies</h3>
+                        <div class="company-tags-list">
+                            <div class="company-tag" title="Google">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Crect fill='%234285F4' width='32' height='32' rx='6'/%3E%3C/svg%3E" alt="Google">
+                                <span>Google</span>
+                                <span class="frequency-badge high">High</span>
+                            </div>
+                            <div class="company-tag" title="Amazon">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Crect fill='%23FF9900' width='32' height='32' rx='6'/%3E%3C/svg%3E" alt="Amazon">
+                                <span>Amazon</span>
+                                <span class="frequency-badge very-high">Very High</span>
+                            </div>
+                            <div class="company-tag" title="Microsoft">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Crect fill='%230A66C2' width='32' height='32' rx='6'/%3E%3C/svg%3E" alt="Microsoft">
+                                <span>Microsoft</span>
+                                <span class="frequency-badge high">High</span>
+                            </div>
+                            <div class="company-tag" title="Meta">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Crect fill='%233B5998' width='32' height='32' rx='6'/%3E%3C/svg%3E" alt="Meta">
+                                <span>Meta</span>
+                                <span class="frequency-badge medium">Medium</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Similar Problems -->
+                    <div class="problem-section">
+                        <h3 class="section-title">Similar Questions</h3>
+                        <div class="similar-problems-list">
+                            <a href="#" class="similar-problem">
+                                <span class="similar-problem-title">3Sum</span>
+                                <span class="difficulty-badge medium">Medium</span>
+                            </a>
+                            <a href="#" class="similar-problem">
+                                <span class="similar-problem-title">4Sum</span>
+                                <span class="difficulty-badge medium">Medium</span>
+                            </a>
+                            <a href="#" class="similar-problem">
+                                <span class="similar-problem-title">Two Sum II - Input Array Is Sorted</span>
+                                <span class="difficulty-badge medium">Medium</span>
+                            </a>
+                            <a href="#" class="similar-problem">
+                                <span class="similar-problem-title">Two Sum III - Data structure design</span>
+                                <span class="difficulty-badge easy">Easy</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Editorial Tab -->
+                <div class="tab-content" id="editorial-tab">
+                    <div class="editorial-content">
+                        <div class="editorial-header">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h2>Official Solution</h2>
+                        </div>
+                        <p>This problem is a premium feature. Upgrade to access detailed solutions and explanations.</p>
+                        <button class="btn-upgrade">
+                            <i class="fas fa-crown"></i>
+                            Upgrade to Premium
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Solutions Tab -->
+                <div class="tab-content" id="solutions-tab">
+                    <div class="solutions-header">
+                        <h3>Community Solutions (247)</h3>
+                        <div class="solutions-filters">
+                            <button class="filter-btn active">Most Votes</button>
+                            <button class="filter-btn">Most Recent</button>
+                            <button class="filter-btn">Top Solutions</button>
+                        </div>
+                    </div>
+                    <div class="solutions-list">
+                        <!-- Solution items would go here -->
+                        <p style="color: #A0A0A0; padding: 2rem; text-align: center;">Solutions loading...</p>
+                    </div>
+                </div>
+
+                <!-- Submissions Tab -->
+                <div class="tab-content" id="submissions-tab">
+                    <div class="submissions-content">
+                        <h3>Your Submissions</h3>
+                        <div class="submissions-table">
+                            <div class="submission-row header">
+                                <span>Status</span>
+                                <span>Language</span>
+                                <span>Runtime</span>
+                                <span>Memory</span>
+                                <span>Submitted</span>
+                            </div>
+                            <div class="empty-state">
+                                <i class="fas fa-inbox"></i>
+                                <p>No submissions yet</p>
+                                <span>Submit your first solution to see it here!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Discuss Tab -->
+                <div class="tab-content" id="discuss-tab">
+                    <div class="discuss-content">
+                        <div class="discuss-header">
+                            <h3>Discussions (89)</h3>
+                            <button class="btn-new-discussion">
+                                <i class="fas fa-plus"></i>
+                                New Discussion
+                            </button>
+                        </div>
+                        <div class="discussions-list">
+                            <!-- Discussion items would go here -->
+                            <p style="color: #A0A0A0; padding: 2rem; text-align: center;">Discussions loading...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right Panel - Code Editor -->
+        <div class="ide-right-panel">
+            
+            <!-- Editor Header -->
+            <div class="editor-header">
+                <div class="editor-controls-left">
+                    <div class="language-selector">
+                        <button class="language-dropdown">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="language-dropdown-menu">
+                            <div class="language-option active">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="language-option">
+                                <i class="fab fa-python"></i>
+                                <span>Python3</span>
+                            </div>
+                            <div class="language-option">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="language-option">
+                                <i class="fas fa-code"></i>
+                                <span>C++</span>
+                            </div>
+                            <div class="language-option">
+                                <i class="fas fa-code"></i>
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="editor-controls-right">
+                    <button class="editor-btn" title="Reset Code">
+                        <i class="fas fa-undo"></i>
+                    </button>
+                    <button class="editor-btn" title="Settings">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <button class="editor-btn" title="Fullscreen">
+                        <i class="fas fa-expand"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Code Editor Area -->
+            <div class="code-editor-area">
+                <div class="code-editor">
+                    <div class="line-numbers">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>6</span>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                        <span>11</span>
+                        <span>12</span>
+                        <span>13</span>
+                        <span>14</span>
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
+                        <span>18</span>
+                        <span>19</span>
+                        <span>20</span>
+                    </div>
+                    <div class="code-content" contenteditable="true" spellcheck="false">
+<span class="code-comment">/**</span>
+<span class="code-comment"> * @param {number[]} nums</span>
+<span class="code-comment"> * @param {number} target</span>
+<span class="code-comment"> * @return {number[]}</span>
+<span class="code-comment"> */</span>
+<span class="code-keyword">var</span> <span class="code-function">twoSum</span> = <span class="code-keyword">function</span>(<span class="code-param">nums</span>, <span class="code-param">target</span>) {
+    <span class="code-comment">// Write your solution here</span>
+    
+    
+    
+    
+    
+    
+    
+    
+};
+                    </div>
+                </div>
+            </div>
+
+            <!-- Console/Test Cases Section -->
+            <div class="console-section">
+                
+                <!-- Console Tabs -->
+                <div class="console-tabs">
+                    <button class="console-tab active" data-console="testcase">
+                        <i class="fas fa-vial"></i>
+                        Testcase
+                    </button>
+                    <button class="console-tab" data-console="result">
+                        <i class="fas fa-check-circle"></i>
+                        Test Result
+                    </button>
+                </div>
+
+                <!-- Testcase Tab Content -->
+                <div class="console-content active" id="testcase-console">
+                    <div class="testcase-selector">
+                        <button class="testcase-btn active">Case 1</button>
+                        <button class="testcase-btn">Case 2</button>
+                        <button class="testcase-btn">Case 3</button>
+                        <button class="testcase-btn-add">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="testcase-input">
+                        <div class="input-group">
+                            <label>nums =</label>
+                            <input type="text" value="[2,7,11,15]" class="testcase-field">
+                        </div>
+                        <div class="input-group">
+                            <label>target =</label>
+                            <input type="text" value="9" class="testcase-field">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Result Tab Content -->
+                <div class="console-content" id="result-console">
+                    <div class="result-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <p>You must run your code first</p>
+                        <span>Click "Run Code" to see the output</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="editor-actions">
+                <button class="btn-run-code">
+                    <i class="fas fa-play"></i>
+                    Run Code
+                </button>
+                <button class="btn-submit-code">
+                    <i class="fas fa-paper-plane"></i>
+                    Submit
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer Info Bar -->
+    <div class="ide-footer">
+        <div class="footer-left">
+            <span class="footer-item">
+                <i class="fas fa-keyboard"></i>
+                Shortcuts: Ctrl+Enter to run
+            </span>
+        </div>
+        <div class="footer-right">
+            <span class="footer-item">
+                <i class="fas fa-database"></i>
+                Auto-saved
+            </span>
+            <span class="footer-item">
+                <i class="fas fa-history"></i>
+                Last submission: Never
+            </span>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Strike - Immersive VR coding education platform with 5000+ practice problems and expert instructors">
+    <meta name="keywords" content="coding education, VR learning, programming practice, interactive IDE">
+    <title>Strike - Step Into The Future of Coding Education</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+     <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Animated Particle Background -->
+    <div class="particle-container" aria-hidden="true">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+        <div class="particle particle-5"></div>
+        <div class="particle particle-6"></div>
+        <div class="particle particle-7"></div>
+        <div class="particle particle-8"></div>
+        <div class="particle particle-9"></div>
+        <div class="particle particle-10"></div>
+        <div class="particle particle-11"></div>
+        <div class="particle particle-12"></div>
+        <div class="particle particle-13"></div>
+        <div class="particle particle-14"></div>
+        <div class="particle particle-15"></div>
+        <div class="particle particle-16"></div>
+        <div class="particle particle-17"></div>
+        <div class="particle particle-18"></div>
+        <div class="particle particle-19"></div>
+        <div class="particle particle-20"></div>
+    </div>
+
+    <!-- Navigation Bar -->
+ <!-- Navigation Bar -->
+<header class="navbar" role="banner">
+    <nav class="nav-container" role="navigation" aria-label="Main navigation">
+        <div class="nav-logo">
+            <img class="codearmylogo" src="LOGO.png" alt="">
+            <span class="logo-text">STRIKE</span>
+        </div>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Menu button">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="problems.html" class="nav-link">Problems</a></li>
+            <li><a href="ide.html" class="nav-link">IDE</a></li>
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-auth">
+            <div class="profile-dropdown">
+                <button class="profile-btn" aria-label="Profile menu" aria-expanded="false">
+                    <div class="profile-avatar">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Ccircle fill='%23FF9F1C' cx='20' cy='20' r='20'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23000' font-size='18' font-weight='bold' font-family='Poppins'%3EDK%3C/text%3E%3C/svg%3E" alt="Profile">
+                    </div>
+                    <span class="profile-name">Dakshit</span>
+                    <i class="fas fa-chevron-down profile-arrow"></i>
+                </button>
+                
+                <div class="profile-dropdown-menu">
+                    <div class="profile-menu-header">
+                        <div class="profile-menu-avatar">
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50'%3E%3Ccircle fill='%23FF9F1C' cx='25' cy='25' r='25'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23000' font-size='22' font-weight='bold' font-family='Poppins'%3EDK%3C/text%3E%3C/svg%3E" alt="Profile">
+                        </div>
+                        <div class="profile-menu-info">
+                            <h4 class="profile-menu-name">Dakshit Bamaniya</h4>
+                            <p class="profile-menu-email">dakshit@strike.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="profile-menu-stats">
+                        <div class="menu-stat">
+                            <i class="fas fa-fire"></i>
+                            <span>45 Day Streak</span>
+                        </div>
+                        <div class="menu-stat">
+                            <i class="fas fa-trophy"></i>
+                            <span>Level 8</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="profile-menu-links">
+                        <li>
+                            <a href="progress.html" class="profile-menu-link">
+                                <i class="fas fa-chart-line"></i>
+                                <span>My Progress</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="progress.html#certificates" class="profile-menu-link">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certificates</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="progress.html#achievements" class="profile-menu-link">
+                                <i class="fas fa-medal"></i>
+                                <span>Achievements</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#settings" class="profile-menu-link">
+                                <i class="fas fa-cog"></i>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#help" class="profile-menu-link">
+                                <i class="fas fa-question-circle"></i>
+                                <span>Help & Support</span>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <div class="profile-menu-footer">
+                        <a href="#signout" class="btn-signout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Sign Out</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+      <!-- Enhanced Launch Announcement Marquee with Font Awesome -->
+    <div class="launch-marquee" role="banner" aria-label="Launch announcement">
+        <div class="marquee-content">
+            <div class="marquee-track">
+                <!-- First Set -->
+                <span class="marquee-item">
+                    <i class="fas fa-rocket marquee-icon"></i>
+                    <span class="marquee-text">Strike Platform Launches <strong>October 18, 2025</strong></span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <span class="marquee-item">
+                    <i class="fas fa-code marquee-icon"></i>
+                    <span class="marquee-text">Join <strong>5000+ Practice Problems</strong> & Structured Courses</span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <span class="marquee-item">
+                    <i class="fas fa-gift marquee-icon"></i>
+                    <span class="marquee-text">Early Bird Special - <strong>50% OFF</strong> Annual Plans</span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <span class="marquee-item">
+                    <i class="fas fa-users marquee-icon"></i>
+                    <span class="marquee-text">Expert Instructors: <strong>Rohit Negi & Aditya Tandon</strong></span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <span class="marquee-item">
+                    <i class="fas fa-vr-cardboard marquee-icon"></i>
+                    <span class="marquee-text">Experience a <strong>Powerful In‑Browser</strong> Coding Environment</span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <span class="marquee-item">
+                    <i class="fas fa-fire marquee-icon"></i>
+                    <span class="marquee-text">Limited Slots - <strong>Register Now</strong> for Priority Access</span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <span class="marquee-item">
+                    <i class="fas fa-certificate marquee-icon"></i>
+                    <span class="marquee-text">Get <strong>Industry-Recognized</strong> Certifications</span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <span class="marquee-item">
+                    <i class="fas fa-bolt marquee-icon"></i>
+                    <span class="marquee-text"><strong>1000+ Learners</strong> Already Enrolled</span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <!-- Duplicate Set for Seamless Loop -->
+                <span class="marquee-item">
+                    <i class="fas fa-rocket marquee-icon"></i>
+                    <span class="marquee-text">Strike Platform Launches <strong>October 18, 2025</strong></span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <span class="marquee-item">
+                    <i class="fas fa-code marquee-icon"></i>
+                    <span class="marquee-text">Join <strong>5000+ Practice Problems</strong> & Structured Courses</span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <span class="marquee-item">
+                    <i class="fas fa-gift marquee-icon"></i>
+                    <span class="marquee-text">Early Bird Special - <strong>50% OFF</strong> Annual Plans</span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <span class="marquee-item">
+                    <i class="fas fa-users marquee-icon"></i>
+                    <span class="marquee-text">Expert Instructors: <strong>Rohit Negi & Aditya Tandon</strong></span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <span class="marquee-item">
+                    <i class="fas fa-vr-cardboard marquee-icon"></i>
+                    <span class="marquee-text">Experience a <strong>Powerful In‑Browser</strong> Coding Environment</span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <span class="marquee-item">
+                    <i class="fas fa-fire marquee-icon"></i>
+                    <span class="marquee-text">Limited Slots - <strong>Register Now</strong> for Priority Access</span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <span class="marquee-item">
+                    <i class="fas fa-certificate marquee-icon"></i>
+                    <span class="marquee-text">Get <strong>Industry-Recognized</strong> Certifications</span>
+                    <span class="marquee-separator">•</span>
+                </span>
+                
+                <span class="marquee-item">
+                    <i class="fas fa-bolt marquee-icon"></i>
+                    <span class="marquee-text"><strong>1000+ Learners</strong> Already Enrolled</span>
+                    <span class="marquee-separator">•</span>
+                </span>
+            </div>
+        </div>
+        
+        <!-- Close Button (Optional) -->
+        <button class="marquee-close" aria-label="Close announcement banner" onclick="this.parentElement.style.display='none'">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+
+    <!-- Hero Section -->
+<!-- About Hero Section with Code Editor -->
+<section class="about-hero-section hero-section" style="min-height: 100vh; padding-top: 8rem; padding-bottom: 4rem;">
+    <div class="hero-container" style="max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+        
+        <!-- Left Side: Content -->
+        <div class="hero-left" style="display: flex; flex-direction: column; gap: 2rem;">
+            
+            <!-- Launch Badge -->
+          <!-- Launch Badge with Diwali Effects -->
+<div class="launch-announcement">
+    <!-- Launch Badge -->
+    <div class="launch-badge">
+        <span class="pulse-dot"></span>
+        <span class="launch-text">LAUNCHING OCTOBER 18, 2025</span>
+    </div>
+
+    <!-- Diwali Crackers Effects -->
+    <div class="diwali-effects" aria-hidden="true">
+        
+        <!-- Rockets -->
+        <div class="rocket rocket-1">
+            <div class="rocket-body"></div>
+            <div class="rocket-flame"></div>
+            <div class="rocket-trail"></div>
+        </div>
+        
+        <div class="rocket rocket-2">
+            <div class="rocket-body"></div>
+            <div class="rocket-flame"></div>
+            <div class="rocket-trail"></div>
+        </div>
+        
+        <div class="rocket rocket-3">
+            <div class="rocket-body"></div>
+            <div class="rocket-flame"></div>
+            <div class="rocket-trail"></div>
+        </div>
+
+        <!-- Firework Bursts -->
+        <div class="firework firework-1">
+            <div class="spark spark-1"></div>
+            <div class="spark spark-2"></div>
+            <div class="spark spark-3"></div>
+            <div class="spark spark-4"></div>
+            <div class="spark spark-5"></div>
+            <div class="spark spark-6"></div>
+            <div class="spark spark-7"></div>
+            <div class="spark spark-8"></div>
+        </div>
+
+        <div class="firework firework-2">
+            <div class="spark spark-1"></div>
+            <div class="spark spark-2"></div>
+            <div class="spark spark-3"></div>
+            <div class="spark spark-4"></div>
+            <div class="spark spark-5"></div>
+            <div class="spark spark-6"></div>
+            <div class="spark spark-7"></div>
+            <div class="spark spark-8"></div>
+        </div>
+
+        <div class="firework firework-3">
+            <div class="spark spark-1"></div>
+            <div class="spark spark-2"></div>
+            <div class="spark spark-3"></div>
+            <div class="spark spark-4"></div>
+            <div class="spark spark-5"></div>
+            <div class="spark spark-6"></div>
+            <div class="spark spark-7"></div>
+            <div class="spark spark-8"></div>
+        </div>
+
+        <!-- Sparkles -->
+              <!-- Enhanced Sparkles - BIGGER & MORE -->
+        <div class="sparkle sparkle-1"></div>
+        <div class="sparkle sparkle-2"></div>
+        <div class="sparkle sparkle-3"></div>
+        <div class="sparkle sparkle-4"></div>
+        <div class="sparkle sparkle-5"></div>
+        <div class="sparkle sparkle-6"></div>
+        <div class="sparkle sparkle-7"></div>
+        <div class="sparkle sparkle-8"></div>
+        <div class="sparkle sparkle-9"></div>
+        <div class="sparkle sparkle-10"></div>
+        <div class="sparkle sparkle-11"></div>
+        <div class="sparkle sparkle-12"></div>
+        <div class="sparkle sparkle-13"></div>
+        <div class="sparkle sparkle-14"></div>
+        <div class="sparkle sparkle-15"></div>
+        <div class="sparkle sparkle-16"></div>
+        <div class="sparkle sparkle-17"></div>
+        <div class="sparkle sparkle-18"></div>
+        <div class="sparkle sparkle-19"></div>
+        <div class="sparkle sparkle-20"></div>
+        <div class="sparkle sparkle-21"></div>
+        <div class="sparkle sparkle-22"></div>
+        <div class="sparkle sparkle-23"></div>
+        <div class="sparkle sparkle-24"></div>
+        <div class="sparkle sparkle-25"></div>
+        <div class="sparkle sparkle-26"></div>
+        <div class="sparkle sparkle-27"></div>
+        <div class="sparkle sparkle-28"></div>
+        <div class="sparkle sparkle-29"></div>
+        <div class="sparkle sparkle-30"></div>
+
+        <!-- Big Star Sparkles -->
+        <div class="big-sparkle big-sparkle-1"></div>
+        <div class="big-sparkle big-sparkle-2"></div>
+        <div class="big-sparkle big-sparkle-3"></div>
+        <div class="big-sparkle big-sparkle-4"></div>
+        <div class="big-sparkle big-sparkle-5"></div>
+        <div class="big-sparkle big-sparkle-6"></div>
+
+        <!-- Cracker Flashes - Enhanced -->
+        <div class="cracker-flash flash-1"></div>
+        <div class="cracker-flash flash-2"></div>
+        <div class="cracker-flash flash-3"></div>
+        <div class="cracker-flash flash-4"></div>
+        <div class="cracker-flash flash-5"></div>
+        <div class="cracker-flash flash-6"></div>
+        <div class="cracker-flash flash-7"></div>
+        <div class="cracker-flash flash-8"></div>
+
+
+    </div>
+</div>
+
+
+            <h1 class="hero-headline" style="line-height: 1.1;">
+                <span class="headline-light">CODE.CREATE.</span>
+                <span class="headline-accent">CONQUER</span>
+            </h1>
+
+            <p class="hero-description" style="font-size: 1.125rem; color: #A0A0A0; line-height: 1.8; max-width: 540px;">
+                  Strike isn’t just another coding platform — it’s a movement led by <strong>Rohit Negi</strong> and <strong>Aditya Tandon</strong>, 
+    two IIT Guwahati graduates who turned their engineering expertise and industry success into a mission to 
+    <span style="color:#fff;">reshape how India learns to code.</span>  
+    With hands-on mentorship, real-world projects, and a future-ready learning experience, Strike empowers every learner 
+    to build, break, and innovate with confidence.   </p>
+
+            <div class="stats-container" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 1rem;">
+                <div class="stat-card glass-effect" style="padding: 1.5rem; border-radius: 12px; display: flex; align-items: center; gap: 1rem;">
+                    <div class="stat-indicator" style="width: 12px; height: 12px; background: #4A90E2; border-radius: 50%; box-shadow: 0 0 15px rgba(74, 144, 226, 0.8); animation: pulse-indicator 2s ease-in-out infinite; flex-shrink: 0;"></div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" style="font-size: 1.75rem; font-weight: 700; color: #FFFFFF; line-height: 1; margin-bottom: 0.25rem;">17+ Years</h3>
+                        <p class="stat-label" style="font-size: 0.875rem; color: #A0A0A0; line-height: 1.2;">Combined Experience</p>
+                    </div>
+                </div>
+                <div class="stat-card glass-effect" style="padding: 1.5rem; border-radius: 12px; display: flex; align-items: center; gap: 1rem;">
+                    <div class="stat-indicator" style="width: 12px; height: 12px; background: #4A90E2; border-radius: 50%; box-shadow: 0 0 15px rgba(74, 144, 226, 0.8); animation: pulse-indicator 2s ease-in-out infinite; flex-shrink: 0;"></div>
+                    <div class="stat-content">
+                        <h3 class="stat-number" style="font-size: 1.75rem; font-weight: 700; color: #FFFFFF; line-height: 1; margin-bottom: 0.25rem;">1250+</h3>
+                        <p class="stat-label" style="font-size: 0.875rem; color: #A0A0A0; line-height: 1.2;">Students Mentored</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-cta" style="display: flex; gap: 1.5rem; margin-top: 1rem;">
+                <a href="#instructors" class="btn-primary">Meet The Team</a>
+                <a href="index.html#features" class="btn-secondary">Explore Platform</a>
+            </div>
+        </div>
+
+        <!-- Right Side: LeetCode-Style Code Editor -->
+        <div class="hero-right" style="display: flex; flex-direction: column; gap: 1rem;">
+            
+            <!-- Code Editor Container -->
+            <div class="glass-effect" style="border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);">
+                
+                <!-- Editor Header (LeetCode Style) -->
+                <div style="background: rgba(10, 14, 39, 0.6); padding: 1rem 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1); display: flex; align-items: center; justify-content: space-between;">
+                    <div style="display: flex; gap: 0.5rem;">
+                        <div style="width: 12px; height: 12px; background: #FF5F56; border-radius: 50%;"></div>
+                        <div style="width: 12px; height: 12px; background: #FFBD2E; border-radius: 50%;"></div>
+                        <div style="width: 12px; height: 12px; background: #27C93F; border-radius: 50%;"></div>
+                    </div>
+                    <div style="display: flex; gap: 1.5rem; align-items: center;">
+                        <span style="color: #A0A0A0; font-size: 0.875rem; font-family: 'Courier New', monospace;">solution.js</span>
+                        <div style="background: rgba(76, 175, 80, 0.2); color: #4CAF50; padding: 0.375rem 0.875rem; border-radius: 15px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(76, 175, 80, 0.4);">Accepted</div>
+                    </div>
+                </div>
+
+                <!-- Editor Tabs -->
+                <div style="background: rgba(10, 14, 39, 0.4); padding: 0.75rem 1.5rem; border-bottom: 1px solid rgba(255, 255, 255, 0.05); display: flex; gap: 2rem;">
+                    <button style="background: none; border: none; color: #FF9F1C; font-weight: 600; font-size: 0.875rem; padding: 0.5rem 0; border-bottom: 2px solid #FF9F1C; cursor: pointer; font-family: 'Poppins', sans-serif;">Code</button>
+                    <button style="background: none; border: none; color: #A0A0A0; font-weight: 500; font-size: 0.875rem; padding: 0.5rem 0; cursor: pointer; font-family: 'Poppins', sans-serif;">Test Cases</button>
+                    <button style="background: none; border: none; color: #A0A0A0; font-weight: 500; font-size: 0.875rem; padding: 0.5rem 0; cursor: pointer; font-family: 'Poppins', sans-serif;">Result</button>
+                </div>
+
+                <!-- Code Content with Typing Animation -->
+                <div style="background: rgba(0, 0, 0, 0.4); padding: 2rem 1.5rem; font-family: 'Courier New', monospace; font-size: 0.9375rem; line-height: 1.8; min-height: 400px; position: relative; overflow: hidden;">
+                    
+                    <!-- Line Numbers -->
+                    <div style="position: absolute; left: 0; top: 2rem; padding: 0 1rem; color: rgba(160, 160, 160, 0.4); user-select: none; line-height: 1.8; font-size: 0.9375rem;">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                        <div>5</div>
+                        <div>6</div>
+                        <div>7</div>
+                        <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
+                        <div>11</div>
+                        <div>12</div>
+                        <div>13</div>
+                        <div>14</div>
+                        <div>15</div>
+                    </div>
+
+                    <!-- Code with Syntax Highlighting -->
+                    <div style="padding-left: 3rem;">
+                        <div style="color: #A0A0A0;">
+                            <span style="color: #FF9F1C;">/**</span>
+                        </div>
+                        <div style="color: #A0A0A0;">
+                            <span style="color: #FF9F1C;"> * Strike Platform - Learning Algorithm</span>
+                        </div>
+                        <div style="color: #A0A0A0;">
+                            <span style="color: #FF9F1C;"> * Created by: Rohit Negi & Aditya Tandon</span>
+                        </div>
+                        <div style="color: #A0A0A0;">
+                            <span style="color: #FF9F1C;"> */</span>
+                        </div>
+                        <div style="height: 0.5rem;"></div>
+                        
+                        <!-- Animated Code Lines -->
+                        <div class="code-line-animated" style="animation: typewriter 0.5s steps(20) 0.5s forwards; overflow: hidden; white-space: nowrap; width: 0;">
+                            <span style="color: #C792EA;">function</span>
+                            <span style="color: #82AAFF;"> transformEducation</span><span style="color: #89DDFF;">(</span><span style="color: #E0E0E0;">students</span><span style="color: #89DDFF;">) {</span>
+                        </div>
+                        
+                        <div class="code-line-animated" style="animation: typewriter 0.5s steps(25) 1s forwards; overflow: hidden; white-space: nowrap; width: 0;">
+                            <span style="color: #E0E0E0;">  </span><span style="color: #C792EA;">const</span><span style="color: #E0E0E0;"> skills </span><span style="color: #89DDFF;">= [</span><span style="color: #C3E88D;">'React'</span><span style="color: #89DDFF;">,</span><span style="color: #C3E88D;"> 'AI'</span><span style="color: #89DDFF;">,</span><span style="color: #C3E88D;"> 'Cloud'</span><span style="color: #89DDFF;">];</span>
+                        </div>
+                        
+                        <div class="code-line-animated" style="animation: typewriter 0.5s steps(30) 1.5s forwards; overflow: hidden; white-space: nowrap; width: 0;">
+                            <span style="color: #E0E0E0;">  </span><span style="color: #C792EA;">const</span><span style="color: #E0E0E0;"> method </span><span style="color: #89DDFF;">= </span><span style="color: #C3E88D;">'guided-project-based-learning'</span><span style="color: #89DDFF;">;</span>
+                        </div>
+                        
+                        <div style="height: 0.5rem;"></div>
+                        
+                        <div class="code-line-animated" style="animation: typewriter 0.5s steps(30) 2s forwards; overflow: hidden; white-space: nowrap; width: 0;">
+                            <span style="color: #E0E0E0;">  </span><span style="color: #C792EA;">return</span><span style="color: #E0E0E0;"> students</span><span style="color: #89DDFF;">.</span><span style="color: #82AAFF;">map</span><span style="color: #89DDFF;">(</span><span style="color: #E0E0E0;">student </span><span style="color: #C792EA;">=></span><span style="color: #89DDFF;"> {</span>
+                        </div>
+                        
+                        <div class="code-line-animated" style="animation: typewriter 0.5s steps(35) 2.5s forwards; overflow: hidden; white-space: nowrap; width: 0;">
+                            <span style="color: #E0E0E0;">    </span><span style="color: #C792EA;">const</span><span style="color: #E0E0E0;"> enhanced </span><span style="color: #89DDFF;">= </span><span style="color: #82AAFF;">practice</span><span style="color: #89DDFF;">(</span><span style="color: #E0E0E0;">student</span><span style="color: #89DDFF;">,</span><span style="color: #E0E0E0;"> skills</span><span style="color: #89DDFF;">);</span>
+                        </div>
+                        
+                        <div class="code-line-animated" style="animation: typewriter 0.5s steps(35) 3s forwards; overflow: hidden; white-space: nowrap; width: 0;">
+                            <span style="color: #E0E0E0;">    </span><span style="color: #C792EA;">const</span><span style="color: #E0E0E0;"> certified </span><span style="color: #89DDFF;">= </span><span style="color: #82AAFF;">certify</span><span style="color: #89DDFF;">(</span><span style="color: #E0E0E0;">enhanced</span><span style="color: #89DDFF;">);</span>
+                        </div>
+                        
+                        <div class="code-line-animated" style="animation: typewriter 0.5s steps(20) 3.5s forwards; overflow: hidden; white-space: nowrap; width: 0;">
+                            <span style="color: #E0E0E0;">    </span><span style="color: #C792EA;">return</span><span style="color: #E0E0E0;"> certified</span><span style="color: #89DDFF;">;</span>
+                        </div>
+                        
+                        <div class="code-line-animated" style="animation: typewriter 0.5s steps(5) 4s forwards; overflow: hidden; white-space: nowrap; width: 0;">
+                            <span style="color: #E0E0E0;">  </span><span style="color: #89DDFF;">});</span>
+                        </div>
+                        
+                        <div class="code-line-animated" style="animation: typewriter 0.5s steps(3) 4.5s forwards; overflow: hidden; white-space: nowrap; width: 0;">
+                            <span style="color: #89DDFF;">}</span>
+                        </div>
+                        
+                        <div style="height: 0.5rem;"></div>
+                        
+                        <div class="code-line-animated" style="animation: typewriter 0.5s steps(40) 5s forwards; overflow: hidden; white-space: nowrap; width: 0;">
+                            <span style="color: #676E95; font-style: italic;">// Launching October 18, 2025 🚀</span>
+                        </div>
+                        
+                        <!-- Blinking Cursor -->
+                        <span style="color: #FF9F1C; animation: blink-cursor 1s step-end infinite; font-weight: 100;">|</span>
+                    </div>
+                </div>
+
+                <!-- Editor Footer -->
+                <div style="background: rgba(10, 14, 39, 0.6); padding: 1rem 1.5rem; border-top: 1px solid rgba(255, 255, 255, 0.1); display: flex; align-items: center; justify-content: space-between;">
+                    <div style="display: flex; gap: 2rem; align-items: center;">
+                        <span style="color: #A0A0A0; font-size: 0.8125rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; color: #4CAF50;">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Runtime: 68ms
+                        </span>
+                        <span style="color: #A0A0A0; font-size: 0.8125rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 16px; height: 16px; color: #4A90E2;">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                            </svg>
+                            Memory: 42.3MB
+                        </span>
+                    </div>
+                    <button style="background: linear-gradient(135deg, #FF9F1C 0%, #FFA500 100%); color: #000000; border: none; padding: 0.625rem 1.5rem; border-radius: 6px; font-weight: 700; font-size: 0.875rem; cursor: pointer; font-family: 'Poppins', sans-serif; box-shadow: 0 4px 15px rgba(255, 159, 28, 0.4); transition: all 0.3s ease;">
+                        Run Code
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Additional Info Badge -->
+            <div style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+                <div class="glass-effect" style="padding: 0.75rem 1.25rem; border-radius: 25px; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: #4CAF50; font-size: 1.25rem;">✓</span>
+                    <span style="color: #E0E0E0; font-size: 0.875rem; font-weight: 500;">Industry-Proven Curriculum</span>
+                </div>
+                <div class="glass-effect" style="padding: 0.75rem 1.25rem; border-radius: 25px; display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: #FF9F1C; font-size: 1.25rem;">⚡</span>
+                    <span style="color: #E0E0E0; font-size: 0.875rem; font-weight: 500;">Project‑Based Learning</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Coder Army Solar System Section -->
+<section class="solar-system-section">
+    <div class="section-container">
+        <div class="section-header">
+            <h2 class="section-titleindex">Complete Tech Universe</h2>
+            <p class="section-subtitle">From fundamentals to advanced concepts - master every technology in our comprehensive curriculum</p>
+        </div>
+
+        <!-- Solar System Container -->
+        <div class="solar-system-container">
+            
+            <!-- Central Sun - Coder Army Logo -->
+            <div class="sun-center">
+                <div class="sun-glow"></div>
+                <div class="sun-core">
+                    <div class="logo-circle" style="width: 80px; height: 80px; margin-bottom: 1rem;"><img class="coderarmysun" src="LOGO.png" alt=""></div>
+                    <h3 class="sun-title">CODER ARMY</h3>
+                    <p class="sun-subtitle">Complete Mastery</p>
+                </div>
+            </div>
+
+            <!-- Orbit 1 - HTML (Fastest - 12s) -->
+            <div class="orbit orbit-1">
+                <div class="orbit-path"></div>
+                <div class="planet planet-html">
+                    <div class="planet-content">
+                        <i class="fab fa-html5" style="color: #E34F26;"></i>
+                        <span class="planet-name">HTML5</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orbit 2 - CSS (15s) -->
+            <div class="orbit orbit-2">
+                <div class="orbit-path"></div>
+                <div class="planet planet-css">
+                    <div class="planet-content">
+                        <i class="fab fa-css3-alt" style="color: #1572B6;"></i>
+                        <span class="planet-name">CSS3</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orbit 3 - JavaScript (18s) -->
+            <div class="orbit orbit-3">
+                <div class="orbit-path"></div>
+                <div class="planet planet-js">
+                    <div class="planet-content">
+                        <i class="fab fa-js" style="color: #F7DF1E;"></i>
+                        <span class="planet-name">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orbit 4 - React (22s) -->
+            <div class="orbit orbit-4">
+                <div class="orbit-path"></div>
+                <div class="planet planet-react">
+                    <div class="planet-content">
+                        <i class="fab fa-react" style="color: #61DAFB;"></i>
+                        <span class="planet-name">React</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orbit 5 - Python (26s) -->
+            <div class="orbit orbit-5">
+                <div class="orbit-path"></div>
+                <div class="planet planet-python">
+                    <div class="planet-content">
+                        <i class="fab fa-python" style="color: #3776AB;"></i>
+                        <span class="planet-name">Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orbit 6 - Node.js (30s) -->
+            <div class="orbit orbit-6">
+                <div class="orbit-path"></div>
+                <div class="planet planet-node">
+                    <div class="planet-content">
+                        <i class="fab fa-node-js" style="color: #339933;"></i>
+                        <span class="planet-name">Node.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orbit 7 - DSA (35s) -->
+            <div class="orbit orbit-7">
+                <div class="orbit-path"></div>
+                <div class="planet planet-dsa">
+                    <div class="planet-content">
+                        <i class="fas fa-sitemap" style="color: #10B981;"></i>
+                        <span class="planet-name">DSA</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orbit 8 - System Design (40s - Slowest) -->
+            <div class="orbit orbit-8">
+                <div class="orbit-path"></div>
+                <div class="planet planet-system">
+                    <div class="planet-content">
+                        <i class="fas fa-project-diagram" style="color: #8B5CF6;"></i>
+                        <span class="planet-name">System Design</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tech Categories -->
+        <div class="tech-categories">
+            <div class="tech-category glass-effect">
+                <i class="fas fa-laptop-code" style="color: #FF9F1C;"></i>
+                <h4>Web Development</h4>
+                <p>HTML, CSS, JavaScript, React, Node.js</p>
+            </div>
+            <div class="tech-category glass-effect">
+                <i class="fas fa-database" style="color: #4A90E2;"></i>
+                <h4>Data Structures</h4>
+                <p>Arrays, Trees, Graphs, DP, Algorithms</p>
+            </div>
+            <div class="tech-category glass-effect">
+                <i class="fas fa-brain" style="color: #A855F7;"></i>
+                <h4>AI & Gen AI</h4>
+                <p>Machine Learning, Deep Learning, NLP</p>
+            </div>
+            <div class="tech-category glass-effect">
+                <i class="fas fa-server" style="color: #10B981;"></i>
+                <h4>System Design</h4>
+                <p>Scalability, Architecture, Best Practices</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Teachers Section -->
+
+      <section class="about-hero-section hero-section" id="about" style="padding-top: 8rem; padding-bottom: 0;">
+        <div class="hero-container">
+            <div class="hero-left">
+                <h1 class="hero-headline" style="line-height: 1.1;">
+                    <span class="headline-light">ABOUT OUR EDUCATORS</span>
+                    <span class="headline-accent">MEET THE BRAINS</span>
+                </h1>
+                <p class="hero-description" style="max-width: 540px;">
+                    At Strike, education is led by passionate creators. Rohit Negi and Aditya Tandon shape the next generation of programmers by blending cutting-edge curriculum, industry mentorship, and hands-on learning—making coding accessible, immersive, and effective for all.
+                </p>
+                <div class="hero-cta">
+                    <a href="index.html#features" class="btn-primary">Our Features</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-universe" style="margin-top: 0;">
+                    <span class="universe-light">EXPERTS</span>
+                    <span class="universe-accent">BEHIND STRIKE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+     <section class="teachers-section" style="padding-top:2rem;">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-titleindex" id="instructors">Who Are We?</h2>
+                <p class="section-subtitle">A closer look at the visionaries and mentors driving Strike’s impact</p>
+            </div>
+            <div class="teachers-grid">
+
+                <!-- Rohit Negi Card -->
+               <article class="teacher-card glass-effect" tabindex="0">
+  <div class="teacher-image-wrapper">
+    <img src="rohitnegi.jpg" class="teacher-image teacher-image-1" role="img" aria-label="Profile of Rohit Negi"></img>
+    <div class="teacher-glow"></div>
+  </div>
+  <div class="teacher-info">
+    <h3 class="teacher-name">Rohit Negi</h3>
+    <p class="teacher-role">Founder, Coder Army | Ex-Uber | Mentor</p>
+    <div class="teacher-rating">
+      <span class="star">★</span>
+      <span class="star">★</span>
+      <span class="star">★</span>
+      <span class="star">★</span>
+      <span class="star">★</span>
+      <span class="rating-score">4.9/5.0</span>
+    </div>
+    <p class="teacher-bio">
+      An IIT Guwahati graduate and GATE AIR 202 achiever, Rohit is a passionate educator and software engineer 
+      who transitioned from building systems at Uber to mentoring thousands of learners through Coder Army. 
+      He specializes in helping students crack technical interviews and build production-ready web apps with 
+      modern technologies and clean architecture.
+    </p>
+    <div class="teacher-stats">
+      <div class="teacher-stat">
+        <span class="stat-value">25K+</span>
+        <span class="stat-name">Students Mentored</span>
+      </div>
+      <div class="teacher-stat">
+        <span class="stat-value">100+</span>
+        <span class="stat-name">Live Sessions Delivered</span>
+      </div>
+      <div class="teacher-stat">
+        <span class="stat-value">2.05 Cr</span>
+        <span class="stat-name">Placement Offer (Uber)</span>
+      </div>
+    </div>
+    <div class="teacher-specializations">
+      <span class="specialization-tag">MERN Stack</span>
+      <span class="specialization-tag">System Design</span>
+      <span class="specialization-tag">DSA</span>
+      <span class="specialization-tag">Interview Prep</span>
+      <span class="specialization-tag">Career Mentorship</span>
+    </div>
+  </div>
+
+  <!-- Rohit Timeline -->
+  <div class="decorative-code" aria-hidden="true" style="opacity:.6; font-size:.93em;">
+    <div class="code-line">// 2020: M.Tech (CSE) – IIT Guwahati</div>
+    <div class="code-line">// 2021: Placed at Uber with 2.05 Cr offer</div>
+    <div class="code-line">// 2022: Began full-time mentorship journey</div>
+    <div class="code-line">// 2023: Co-founded Coder Army to guide learners</div>
+  </div>
+
+  <!-- Rohit Key Skills -->
+  <div style="margin-top:1.5rem;">
+    <h4 class="section-titleindex" style="font-size:1.15rem; color:#FF9F1C; margin-bottom:.75rem;">Specializations</h4>
+    <ul style="display:flex;flex-wrap:wrap;gap:.8rem;font-size:.97em;">
+      <li class="specialization-tag">Full Stack Development</li>
+      <li class="specialization-tag">Cloud Deployment</li>
+      <li class="specialization-tag">Tech Interview Prep</li>
+      
+    </ul>
+  </div>
+</article>
+
+
+                <!-- Aditya Tandon Card -->
+                <article class="teacher-card glass-effect" tabindex="0">
+  <div class="teacher-image-wrapper">
+    <img src="adityatandon.png" class="teacher-image teacher-image-2" role="img" aria-label="Profile of Aditya Tandon"></img>
+    <div class="teacher-glow"></div>
+  </div>
+  <div class="teacher-info">
+    <h3 class="teacher-name">Aditya Tandon</h3>
+    <p class="teacher-role">Co-Founder, Coder Army | Ex-OLA | Software Engineer & Mentor</p>
+    <div class="teacher-rating">
+      <span class="star">★</span>
+      <span class="star">★</span>
+      <span class="star">★</span>
+      <span class="star">★</span>
+      <span class="star">★</span>
+      <span class="rating-score">4.8/5.0</span>
+    </div>
+    <p class="teacher-bio">
+      Aditya is a passionate software engineer and mentor who completed his M.Tech in Computer Science from IIT Guwahati. 
+      With experience at OLA and a strong foundation in scalable backend systems, he now helps aspiring developers master 
+      full-stack development, data structures, and interview preparation through Coder Army. His teaching focuses on 
+      practical projects, clean code, and problem-solving confidence.
+    </p>
+    <div class="teacher-stats">
+      <div class="teacher-stat">
+        <span class="stat-value">20K+</span>
+        <span class="stat-name">Students Mentored</span>
+      </div>
+      <div class="teacher-stat">
+        <span class="stat-value">80+</span>
+        <span class="stat-name">Live Sessions</span>
+      </div>
+      <div class="teacher-stat">
+        <span class="stat-value">5Y+</span>
+        <span class="stat-name">Industry Experience</span>
+      </div>
+    </div>
+    <div class="teacher-specializations">
+      <span class="specialization-tag">System Design</span>
+      <span class="specialization-tag">Backend Development</span>
+      <span class="specialization-tag">DSA</span>
+      <span class="specialization-tag">Java</span>
+      <span class="specialization-tag">Mentorship</span>
+    </div>
+  </div>
+
+  <!-- Aditya Timeline -->
+  <div class="decorative-code" aria-hidden="true" style="opacity:.6; font-size:.93em;">
+    <div class="code-line">// 2020: M.Tech (CSE) – IIT Guwahati</div>
+    <div class="code-line">// 2021: Software Engineer at OLA</div>
+    <div class="code-line">// 2022: Started mentoring dev aspirants</div>
+    <div class="code-line">// 2023: Co-founded Coder Army to empower learners</div>
+  </div>
+
+  <!-- Aditya Key Skills -->
+  <div style="margin-top:1.5rem;">
+    <h4 class="section-titleindex" style="font-size:1.15rem; color:#FF9F1C; margin-bottom:.75rem;">Specializations</h4>
+    <ul style="display:flex;flex-wrap:wrap;gap:.8rem;font-size:.97em;">
+      <li class="specialization-tag">System Design</li>
+      <li class="specialization-tag">Scalable Backend Systems</li>
+    
+      <li class="specialization-tag">Career Mentorship</li>
+    </ul>
+  </div>
+</article>
+
+
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-titleindex">Powerful Learning Features</h2>
+                <p class="section-subtitle">Everything needed to master coding from basics to advanced concepts</p>
+            </div>
+
+            <div class="features-grid">
+                <article class="feature-card glass-effect">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M9 9l6 6M15 9l-6 6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">5000+ Practice Problems</h3>
+                    <p class="feature-description">
+                        Master data structures and algorithms with our comprehensive problem set spanning 
+                        easy to expert difficulty levels. Each problem includes detailed explanations, 
+                        multiple solution approaches, and time complexity analysis to deepen understanding.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Beginner-friendly challenges</li>
+                        <li>Interview preparation questions</li>
+                        <li>Competitive programming contests</li>
+                        <li>Company-specific problem sets</li>
+                    </ul>
+                    <a href="/problems.html" class="feature-link">Explore Problems</a>
+                </article>
+
+                <article class="feature-card glass-effect">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-World Projects</h3>
+                    <p class="feature-description">
+                        Build production-ready applications with guided project-based learning. Work on 
+                        full-stack applications, mobile apps, and machine learning projects that mirror 
+                        industry standards and best practices used by leading tech companies.
+                    </p>
+                    <ul class="feature-list">
+                        <li>E-commerce platforms</li>
+                        <li>Social media applications</li>
+                        <li>AI-powered tools</li>
+                        <li>Portfolio-worthy projects</li>
+                    </ul>
+                    <a href="#projects" class="feature-link">Start Building</a>
+                </article>
+
+                <article class="feature-card glass-effect">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Interactive IDE</h3>
+                    <p class="feature-description">
+                        Code directly in browser with our powerful integrated development environment 
+                        featuring syntax highlighting, auto-completion, real-time error detection, and 
+                        instant feedback. Supports 15+ programming languages with no setup required.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Multi-language support</li>
+                        <li>Real-time collaboration</li>
+                        <li>Automatic code formatting</li>
+                        <li>Built-in debugging tools</li>
+                    </ul>
+                    <a href="#ide" class="feature-link">Try IDE</a>
+                </article>
+
+                <article class="feature-card glass-effect">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Progress Tracking</h3>
+                    <p class="feature-description">
+                        Monitor learning journey with comprehensive analytics dashboards showing problem 
+                        completion rates, skill proficiency levels, time spent coding, and personalized 
+                        recommendations for improvement based on performance patterns.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Visual progress charts</li>
+                        <li>Skill level assessments</li>
+                        <li>Performance analytics</li>
+                        <li>Achievement badges</li>
+                    </ul>
+                    <a href="#progress" class="feature-link">View Dashboard</a>
+                </article>
+
+                <article class="feature-card glass-effect">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            ircle cx="9" cy="7" r="4"4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Community Forum</h3>
+                    <p class="feature-description">
+                        Connect with thousands of learners worldwide in our vibrant community forum. Ask 
+                        questions, share solutions, participate in discussions, and collaborate on group 
+                        projects with peers at all skill levels from beginner to expert.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Peer-to-peer support</li>
+                        <li>Code review sessions</li>
+                        <li>Study groups</li>
+                        <li>Technical discussions</li>
+                    </ul>
+                    <a href="#community" class="feature-link">Join Community</a>
+                </article>
+
+                <article class="feature-card glass-effect">
+                    <div class="feature-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Certification Programs</h3>
+                    <p class="feature-description">
+                        Earn industry-recognized certificates upon completing specialized learning paths. 
+                        Showcase verified skills to employers with credentials in web development, data 
+                        science, machine learning, mobile development, and cloud computing.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Verified credentials</li>
+                        <li>LinkedIn integration</li>
+                        <li>Employer recognition</li>
+                        <li>Career advancement</li>
+                    </ul>
+                    <a href="#certifications" class="feature-link">View Certificates</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Problems Section -->
+    <section id="product" class="problems-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-titleindex">Practice Problems Library</h2>
+                <p class="section-subtitle">Sharpen skills with curated coding challenges across all difficulty levels</p>
+            </div>
+
+            <div class="problems-filters">
+                <button class="filter-btn active" data-category="all">All Problems</button>
+                <button class="filter-btn" data-category="data-structures">Data Structures</button>
+                <button class="filter-btn" data-category="algorithms">Algorithms</button>
+                <button class="filter-btn" data-category="web-dev">Web Development</button>
+                <button class="filter-btn" data-category="databases">Databases</button>
+                <button class="filter-btn" data-category="system-design">System Design</button>
+            </div>
+
+            <div class="problems-grid">
+                <article class="problem-card glass-effect" data-category="data-structures">
+                    <div class="problem-header">
+                        <h3 class="problem-title">Two Sum Problem</h3>
+                        <span class="difficulty-badge easy">Easy</span>
+                    </div>
+                    <p class="problem-description">
+                        Given an array of integers and a target value, return indices of two numbers 
+                        that add up to the target. Classic problem testing hash map understanding.
+                    </p>
+                    <div class="problem-meta">
+                        <span class="problem-tag">Arrays</span>
+                        <span class="problem-tag">Hash Table</span>
+                        <span class="problem-acceptance">Acceptance: 48.2%</span>
+                    </div>
+                    <div class="problem-stats">
+                        <span class="problem-stat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
+                            </svg>
+                            2.4K
+                        </span>
+                        <span class="problem-stat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                ircle cx="12" cy="12"2" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            15 min
+                        </span>
+                    </div>
+                    <a href="#solve" class="btn-problem">Try Now</a>
+                </article>
+
+                <article class="problem-card glass-effect" data-category="algorithms">
+                    <div class="problem-header">
+                        <h3 class="problem-title">Binary Tree Traversal</h3>
+                        <span class="difficulty-badge medium">Medium</span>
+                    </div>
+                    <p class="problem-description">
+                        Implement inorder, preorder, and postorder traversal methods for binary trees. 
+                        Essential problem for understanding tree data structures and recursion patterns.
+                    </p>
+                    <div class="problem-meta">
+                        <span class="problem-tag">Trees</span>
+                        <span class="problem-tag">Recursion</span>
+                        <span class="problem-acceptance">Acceptance: 65.7%</span>
+                    </div>
+                    <div class="problem-stats">
+                        <span class="problem-stat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
+                            </svg>
+                            1.8K
+                        </span>
+                        <span class="problem-stat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                ircle cx="12" cy="12" r="="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            25 min
+                        </span>
+                    </div>
+                    <a href="#solve" class="btn-problem">Try Now</a>
+                </article>
+
+                <article class="problem-card glass-effect" data-category="algorithms">
+                    <div class="problem-header">
+                        <h3 class="problem-title">Dynamic Programming - Knapsack</h3>
+                        <span class="difficulty-badge hard">Hard</span>
+                    </div>
+                    <p class="problem-description">
+                        Solve the classic 0/1 knapsack problem using dynamic programming optimization. 
+                        Tests ability to identify optimal substructure and implement memoization strategies.
+                    </p>
+                    <div class="problem-meta">
+                        <span class="problem-tag">Dynamic Programming</span>
+                        <span class="problem-tag">Optimization</span>
+                        <span class="problem-acceptance">Acceptance: 32.5%</span>
+                    </div>
+                    <div class="problem-stats">
+                        <span class="problem-stat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
+                            </svg>
+                            956
+                        </span>
+                        <span class="problem-stat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                ircle cx="1212" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            45 min
+                        </span>
+                    </div>
+                    <a href="#solve" class="btn-problem">Try Now</a>
+                </article>
+
+                <article class="problem-card glass-effect" data-category="web-dev">
+                    <div class="problem-header">
+                        <h3 class="problem-title">Build RESTful API</h3>
+                        <span class="difficulty-badge medium">Medium</span>
+                    </div>
+                    <p class="problem-description">
+                        Create a complete RESTful API with authentication, CRUD operations, and error 
+                        handling. Practical challenge for backend development and API design skills.
+                    </p>
+                    <div class="problem-meta">
+                        <span class="problem-tag">Node.js</span>
+                        <span class="problem-tag">Express</span>
+                        <span class="problem-acceptance">Acceptance: 71.3%</span>
+                    </div>
+                    <div class="problem-stats">
+                        <span class="problem-stat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
+                            </svg>
+                            3.1K
+                        </span>
+                        <span class="problem-stat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                ircle cx="="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            60 min
+                        </span>
+                    </div>
+                    <a href="#solve" class="btn-problem">Try Now</a>
+                </article>
+
+                <article class="problem-card glass-effect" data-category="databases">
+                    <div class="problem-header">
+                        <h3 class="problem-title">Complex SQL Queries</h3>
+                        <span class="difficulty-badge medium">Medium</span>
+                    </div>
+                    <p class="problem-description">
+                        Master advanced SQL with joins, subqueries, window functions, and aggregations. 
+                        Real-world database scenarios used in data analysis and backend systems.
+                    </p>
+                    <div class="problem-meta">
+                        <span class="problem-tag">SQL</span>
+                        <span class="problem-tag">Database</span>
+                        <span class="problem-acceptance">Acceptance: 54.8%</span>
+                    </div>
+                    <div class="problem-stats">
+                        <span class="problem-stat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
+                            </svg>
+                            2.7K
+                        </span>
+                        <span class="problem-stat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                ircle cx="="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            30 min
+                        </span>
+                    </div>
+                    <a href="#solve" class="btn-problem">Try Now</a>
+                </article>
+
+                <article class="problem-card glass-effect" data-category="system-design">
+                    <div class="problem-header">
+                        <h3 class="problem-title">Design URL Shortener</h3>
+                        <span class="difficulty-badge hard">Hard</span>
+                    </div>
+                    <p class="problem-description">
+                        Design scalable URL shortening service handling millions of requests. Covers 
+                        system architecture, database design, caching strategies, and load balancing.
+                    </p>
+                    <div class="problem-meta">
+                        <span class="problem-tag">System Design</span>
+                        <span class="problem-tag">Scalability</span>
+                        <span class="problem-acceptance">Acceptance: 28.4%</span>
+                    </div>
+                    <div class="problem-stats">
+                        <span class="problem-stat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
+                            </svg>
+                            1.5K
+                        </span>
+                        <span class="problem-stat">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                ircle cx="12" cy="12" r="="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                            90 min
+                        </span>
+                    </div>
+                    <a href="#solve" class="btn-problem">Try Now</a>
+                </article>
+            </div>
+
+            <div class="binary-background" aria-hidden="true">
+                <div class="binary-line">01001000 01100101 01101100 01101100 01101111</div>
+                <div class="binary-line">01010111 01101111 01110010 01101100 01100100</div>
+                <div class="binary-line">01000011 01101111 01100100 01100101 00100000</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-titleindex">Explore Real-World Projects</h2>
+                <p class="section-subtitle">Build portfolio-worthy applications with step-by-step guidance</p>
+            </div>
+
+            <div class="projects-filters">
+                <button class="filter-btn active" data-tech="all">All Projects</button>
+                <button class="filter-btn" data-tech="mern">MERN Stack</button>
+                <button class="filter-btn" data-tech="python">Python</button>
+                <button class="filter-btn" data-tech="java">Java</button>
+                <button class="filter-btn" data-tech="mobile">Mobile</button>
+                <button class="filter-btn" data-tech="ai-ml">AI/ML</button>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card glass-effect" data-tech="mern">
+                    <img src="ecommerce.png" class="project-image project-image-1"></img>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            Full-featured online shopping platform with payment integration, cart 
+                            management, order tracking, and admin dashboard for inventory control.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">Stripe</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-difficulty medium">Intermediate</span>
+                            <span class="project-duration">8-10 weeks</span>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <a href="#build" class="btn-project">Start Building</a>
+                    </div>
+                </article>
+
+                <article class="project-card glass-effect" data-tech="mern">
+                    <img src="socialmedia.png" class="project-image project-image-2"></img>
+                    <div class="project-content">
+                        <h3 class="project-title">Social Media Application</h3>
+                        <p class="project-description">
+                            Instagram-inspired social platform with real-time messaging, image uploads, 
+                            likes, comments, user profiles, and friend connection functionality.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Express</span>
+                            <span class="tech-badge">Socket.io</span>
+                            <span class="tech-badge">AWS S3</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-difficulty hard">Advanced</span>
+                            <span class="project-duration">10-12 weeks</span>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <a href="#build" class="btn-project">Start Building</a>
+                    </div>
+                </article>
+
+                <article class="project-card glass-effect" data-tech="python">
+                    <img src="datavisual.png" class="project-image project-image-3"></img>
+                    <div class="project-content">
+                        <h3 class="project-title">Data Visualization Dashboard</h3>
+                        <p class="project-description">
+                            Interactive analytics dashboard using Python and Plotly for visualizing 
+                            complex datasets with charts, graphs, and real-time data filtering options.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Dash</span>
+                            <span class="tech-badge">Plotly</span>
+                            <span class="tech-badge">Pandas</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-difficulty medium">Intermediate</span>
+                            <span class="project-duration">6-8 weeks</span>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <a href="#build" class="btn-project">Start Building</a>
+                    </div>
+                </article>
+
+                <article class="project-card glass-effect" data-tech="ai-ml">
+                    <img src="chatbot.png" class="project-image project-image-4"></img>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Chatbot Assistant</h3>
+                        <p class="project-description">
+                            Intelligent conversational AI using natural language processing and machine 
+                            learning to understand context and provide helpful automated responses.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">TensorFlow</span>
+                            <span class="tech-badge">NLP</span>
+                            <span class="tech-badge">Flask</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-difficulty hard">Advanced</span>
+                            <span class="project-duration">12-14 weeks</span>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <a href="#build" class="btn-project">Start Building</a>
+                    </div>
+                </article>
+
+                <article class="project-card glass-effect" data-tech="mobile">
+                    <img src="fitness.png" class="project-image project-image-5"></img>
+                    <div class="project-content">
+                        <h3 class="project-title">Fitness Tracking App</h3>
+                        <p class="project-description">
+                            Cross-platform mobile application for tracking workouts, nutrition, progress 
+                            photos, and fitness goals with personalized workout recommendations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React Native</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">Redux</span>
+                            <span class="tech-badge">Charts</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-difficulty medium">Intermediate</span>
+                            <span class="project-duration">8-10 weeks</span>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">Not StarFted</span>
+                        </div>
+                        <a href="#build" class="btn-project">Start Building</a>
+                    </div>
+                </article>
+
+                <article class="project-card glass-effect" data-tech="java">
+                    <img src="banking.png" class="project-image project-image-6"></img>
+                    <div class="project-content">
+                        <h3 class="project-title">Banking Management System</h3>
+                        <p class="project-description">
+                            Enterprise-level banking application with account management, transactions, 
+                            loan processing, and comprehensive security features using Java Spring Boot.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Java</span>
+                            <span class="tech-badge">Spring Boot</span>
+                            <span class="tech-badge">MySQL</span>
+                            <span class="tech-badge">Security</span>
+                        </div>
+                        <div class="project-meta">
+                            <span class="project-difficulty hard">Advanced</span>
+                            <span class="project-duration">10-12 weeks</span>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%"></div>
+                            </div>
+                            <span class="progress-text">Not Started</span>
+                        </div>
+                        <a href="#build" class="btn-project">Start Building</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Pricing Section -->
+<section id="pricing" class="pricing-section">
+    <div class="section-container">
+        <div class="section-header">
+            <h2 class="section-titleindex">Choose Your Learning Path</h2>
+            <p class="section-subtitle">Comprehensive courses designed by industry experts with lifetime access and certification</p>
+        </div>
+
+        <!-- Pricing Toggle -->
+        <div class="pricing-toggle">
+            <span class="toggle-label" id="monthly-label">Monthly</span>
+            <label class="toggle-switch">
+                <input type="checkbox" id="pricing-toggle" checked>
+                <span class="toggle-slider"></span>
+            </label>
+            <span class="toggle-label active" id="annual-label">
+                Annual
+                <span class="discount-badge">Save 40%</span>
+            </span>
+        </div>
+
+        <!-- Pricing Cards Grid -->
+        <div class="pricing-grid">
+
+            <!-- DSA Course Card -->
+            <article class="pricing-card glass-effect" data-category="dsa">
+                <div class="pricing-card-header">
+                    <div class="course-icon" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(5, 150, 105, 0.2) 100%);">
+                        <i class="fas fa-sitemap" style="color: #10B981;"></i>
+                    </div>
+                    <h3 class="course-title">Data Structures & Algorithms</h3>
+                    <p class="course-subtitle">Master problem-solving for FAANG interviews</p>
+                </div>
+
+                <div class="pricing-card-price">
+                    <div class="price-wrapper">
+                        <span class="currency">₹</span>
+                        <span class="price-amount" data-monthly="1,999" data-annual="11,994">11,994</span>
+                        <span class="price-duration">/year</span>
+                    </div>
+                    <p class="price-note">One-time payment • Lifetime access</p>
+                </div>
+
+                <div class="pricing-card-features">
+                    <h4 class="features-title">What's Included:</h4>
+                    <ul class="features-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>2000+ Practice Problems</strong> with detailed solutions</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>150+ Video Lectures</strong> on core DSA concepts</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Company-Specific</strong> interview question sets</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Mock Interviews</strong> with personalized feedback</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Time & Space Complexity</strong> analysis masterclass</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Weekly Contests</strong> with leaderboard rankings</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Downloadable Resources</strong> & cheat sheets</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Verified Certificate</strong> upon completion</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card-footer">
+                    <a href="#enroll-dsa" class="btn-pricing">Enroll Now</a>
+                    <p class="money-back">30-day money-back guarantee</p>
+                </div>
+
+                <div class="pricing-card-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span>12,000+ Students</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-star"></i>
+                        <span>4.8/5 Rating</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Gen AI Course Card (Popular) -->
+            <article class="pricing-card glass-effect popular" data-category="genai">
+                <div class="popular-badge">
+                    <i class="fas fa-crown"></i>
+                    <span>Most Popular</span>
+                </div>
+                
+                <div class="pricing-card-header">
+                    <div class="course-icon" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.2) 0%, rgba(147, 51, 234, 0.2) 100%);">
+                        <i class="fas fa-brain" style="color: #A855F7;"></i>
+                    </div>
+                    <h3 class="course-title">Generative AI & LLMs</h3>
+                    <p class="course-subtitle">Build cutting-edge AI applications with GPT, DALL-E & more</p>
+                </div>
+
+                <div class="pricing-card-price">
+                    <div class="price-wrapper">
+                        <span class="currency">₹</span>
+                        <span class="price-amount" data-monthly="2,499" data-annual="14,994">14,994</span>
+                        <span class="price-duration">/year</span>
+                    </div>
+                    <p class="price-note">One-time payment • Lifetime access</p>
+                </div>
+
+                <div class="pricing-card-features">
+                    <h4 class="features-title">What's Included:</h4>
+                    <ul class="features-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>GPT-4 & ChatGPT</strong> mastery with prompt engineering</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>200+ Hours Content</strong> on Transformers & LLMs</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Hands-on Projects</strong> with DALL-E, Midjourney, Stable Diffusion</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Fine-tuning Models</strong> for custom use cases</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>RAG Systems</strong> & Vector Databases (Pinecone, Weaviate)</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>LangChain & LlamaIndex</strong> framework deep dive</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>AI Ethics & Safety</strong> best practices</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Deploy AI Apps</strong> to production with cloud platforms</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Exclusive Discord</strong> community access</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Professional Certificate</strong> recognized by industry</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card-footer">
+                    <a href="#enroll-genai" class="btn-pricing btn-popular">Enroll Now</a>
+                    <p class="money-back">30-day money-back guarantee</p>
+                </div>
+
+                <div class="pricing-card-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span>18,500+ Students</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-star"></i>
+                        <span>4.9/5 Rating</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- System Design Course Card -->
+            <article class="pricing-card glass-effect" data-category="system">
+                <div class="pricing-card-header">
+                    <div class="course-icon" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(37, 99, 235, 0.2) 100%);">
+                        <i class="fas fa-project-diagram" style="color: #3B82F6;"></i>
+                    </div>
+                    <h3 class="course-title">System Design Mastery</h3>
+                    <p class="course-subtitle">Design scalable systems for senior engineer roles</p>
+                </div>
+
+                <div class="pricing-card-price">
+                    <div class="price-wrapper">
+                        <span class="currency">₹</span>
+                        <span class="price-amount" data-monthly="2,299" data-annual="13,794">13,794</span>
+                        <span class="price-duration">/year</span>
+                    </div>
+                    <p class="price-note">One-time payment • Lifetime access</p>
+                </div>
+
+                <div class="pricing-card-features">
+                    <h4 class="features-title">What's Included:</h4>
+                    <ul class="features-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>50+ Real-World Designs</strong> (Netflix, Uber, WhatsApp, etc.)</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>180+ Video Lectures</strong> with architecture diagrams</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Scalability Patterns</strong> & Load Balancing strategies</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Database Design</strong> (SQL vs NoSQL decision framework)</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Microservices Architecture</strong> best practices</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Caching Strategies</strong> (Redis, Memcached)</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Message Queues</strong> & Event-Driven Architecture</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Live Design Sessions</strong> with senior engineers</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Trade-off Analysis</strong> for real interviews</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span><strong>Industry Certificate</strong> upon completion</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card-footer">
+                    <a href="#enroll-system" class="btn-pricing">Enroll Now</a>
+                    <p class="money-back">30-day money-back guarantee</p>
+                </div>
+
+                <div class="pricing-card-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span>9,800+ Students</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-star"></i>
+                        <span>4.9/5 Rating</span>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Additional Info -->
+        <div class="pricing-additional-info">
+            <div class="info-card glass-effect">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Secure Payment</h4>
+                <p>256-bit SSL encryption</p>
+            </div>
+            <div class="info-card glass-effect">
+                <i class="fas fa-infinity"></i>
+                <h4>Lifetime Access</h4>
+                <p>Learn at your own pace</p>
+            </div>
+            <div class="info-card glass-effect">
+                <i class="fas fa-mobile-alt"></i>
+                <h4>Multi-Device</h4>
+                <p>Access on all devices</p>
+            </div>
+            <div class="info-card glass-effect">
+                <i class="fas fa-headset"></i>
+                <h4>24/7 Support</h4>
+                <p>Expert assistance anytime</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-titleindex">Student Success Stories</h2>
+                <p class="section-subtitle">Real feedback from learners who transformed their careers</p>
+            </div>
+
+            <div class="testimonials-carousel">
+                <div class="testimonial-track">
+                    <article class="testimonial-card glass-effect">
+                        <div class="quote-mark" aria-hidden="true">"</div>
+                        <div class="testimonial-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            Strike transformed my coding journey completely. The interactive problems and 
+                            real-world projects gave me confidence to land my dream job as a full-stack 
+                            developer. The instructors are incredibly knowledgeable and supportive.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=1148&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="author-image author-image-1"></img>
+                            <div class="author-info">
+                                <h4 class="author-name">Priya Sharma</h4>
+                                <p class="author-position">Software Engineer at Google</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card glass-effect">
+                        <div class="quote-mark" aria-hidden="true">"</div>
+                        <div class="testimonial-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            Best investment in my career. The practice problems library is extensive and 
+                            perfectly structured. I went from beginner to cracking coding interviews at 
+                            major tech companies in just 6 months. Highly recommend Strike to everyone.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="author-image author-image-2"></img>
+                            <div class="author-info">
+                                <h4 class="author-name">Arjun Mehta</h4>
+                                <p class="author-position">Backend Developer at Microsoft</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card glass-effect">
+                        <div class="quote-mark" aria-hidden="true">"</div>
+                        <div class="testimonial-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            The project-based learning approach is phenomenal. Building real applications 
+                            while learning gave me a strong portfolio. The community forum helped whenever 
+                            I got stuck. Now working as a freelance developer thanks to Strike.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHJhbmRvbSUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D" class="author-image author-image-3"></img>
+                            <div class="author-info">
+                                <h4 class="author-name">Sneha Patel</h4>
+                                <p class="author-position">Freelance Full Stack Developer</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card glass-effect">
+                        <div class="quote-mark" aria-hidden="true">"</div>
+                        <div class="testimonial-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            Coming from a non-CS background, I was nervous about learning to code. Strike's 
+                            structured curriculum and supportive instructors made the journey smooth. Now 
+                            I'm confidently working on complex backend systems at a unicorn startup.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="author-image author-image-4"></img>
+                            <div class="author-info">
+                                <h4 class="author-name">Rahul Sharma</h4>
+                                <p class="author-position">Senior Developer at Razorpay</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card glass-effect">
+                        <div class="quote-mark" aria-hidden="true">"</div>
+                        <div class="testimonial-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                        </div>
+                        <p class="testimonial-text">
+                            The VR learning experience is next level. It made complex algorithms and data 
+                            structures so much easier to understand. The certifications helped me stand 
+                            out in interviews. Strike is worth every rupee spent on education.
+                        </p>
+                        <div class="testimonial-author">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="author-image author-image-5"></img>
+                            <div class="author-info">
+                                <h4 class="author-name">Ananya Singh</h4>
+                                <p class="author-position">Frontend Developer at Flipkart</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="carousel-dots" role="tablist" aria-label="Testimonial navigation">
+                <button class="carousel-dot active" aria-label="View testimonial 1" aria-selected="true"></button>
+                <button class="carousel-dot" aria-label="View testimonial 2" aria-selected="false"></button>
+                <button class="carousel-dot" aria-label="View testimonial 3" aria-selected="false"></button>
+                <button class="carousel-dot" aria-label="View testimonial 4" aria-selected="false"></button>
+                <button class="carousel-dot" aria-label="View testimonial 5" aria-selected="false"></button>
+            </div>
+
+
+             <div class="section-header" style="margin-bottom:0; margin-top:3rem;">
+                <h2 class="section-titleindex">Vision for Future Learning</h2>
+                <p class="section-subtitle">We believe every student should access world-class skills, VR-powered practice, and a supportive tech community.<br> Join our community and code for tomorrow.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="footer-section">
+        <div class="footer-glow"></div>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-column footer-brand">
+                    <div class="footer-logo">
+                         <img class="codearmylogo" src="LOGO.png" alt="">
+              
+                <span class="logo-text">STRIKE</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Empowering the next generation of developers through immersive VR learning 
+                        experiences and world-class curriculum designed for real-world success.
+                    </p>
+                    <div class="social-links">
+                        <a href="#facebook" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://x.com/CoderArmy" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/coderarmy/" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#github" class="social-link" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing Plans</a></li>
+                        <li><a href="#blog">Blog Articles</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#documentation">Documentation</a></li>
+                        <li><a href="#tutorials">Video Tutorials</a></li>
+                        <li><a href="#community">Community Forum</a></li>
+                        <li><a href="#webinars">Live Webinars</a></li>
+                        <li><a href="#ebooks">Free E-books</a></li>
+                        <li><a href="#api">API Reference</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            <a href="mailto:support@strike.com">support@strike.com</a>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            <a href="tel:+911234567890">+91 123 456 7890</a>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span>Delhi, India</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column footer-newsletter">
+                    <h3 class="footer-heading">Newsletter Signup</h3>
+                    <p class="newsletter-text">
+                        Subscribe to receive updates on new courses, features, and exclusive learning resources.
+                    </p>
+                    <form class="newsletter-form" aria-label="Newsletter subscription form">
+                        <input 
+                            type="email" 
+                            placeholder="Enter your email" 
+                            class="newsletter-input"
+                            aria-label="Email address"
+                            required
+                        >
+                        <button type="submit" class="newsletter-btn" aria-label="Subscribe to newsletter">
+                            Subscribe
+                        </button>
+                    </form>
+                    <p class="newsletter-note">
+                        We respect your privacy. Unsubscribe anytime.
+                    </p>
+                </div>
+            </div>
+
+                        <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2025 Strike Education Platform. All rights reserved.
+                </p>
+                <div class="footer-credit">
+                    <span style="color: #A0A0A0;">Designed & Developed with</span>
+                    <span style="color: #FF9F1C; margin: 0 0.25rem; animation: pulse-heart 1.5s ease-in-out infinite;">❤</span>
+                    <span style="color: #A0A0A0;">by</span>
+                    <a href="#" class="developer-name">Dakshit Bamaniya</a>
+                </div>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <span class="separator">|</span>
+                    <a href="#terms">Terms of Service</a>
+                    <span class="separator">|</span>
+                    <a href="#cookies">Cookie Policy</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Skip to main content link for accessibility -->
+    <a href="#home" class="skip-link">Skip to main content</a>
+
+</body>
+</html>
